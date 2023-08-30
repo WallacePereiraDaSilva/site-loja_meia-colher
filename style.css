@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+
+}
+
+.html{
+    height: 500vh;
+
+}
+
+.container {
+    max-width: 1200px;
+
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.home a:hover{
+    color: #eaff00;
+    border-top: 2px solid #eaff00;
+    border-bottom: 2px solid #eaff00;
+
+}
+
+header{ 
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem{
+    background-color:  #46a2c4;
+    padding: 1px 4%;
+    
+}
+header.rolagem a, header.rolagem i{
+    color: rgb(252, 251, 251);
+}
+
+
+header i{
+    font-size: 30px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+/* .btn-ctt button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #ff6600;
+    color: #fff;
+    cursor: pointer;
+    transition:  .2s;
+} */
+
+
+
+.banner{
+    height: 100vh;
+    background-image: url(imagens.logo/daffodils-6523446_1280.jpg);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 787px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 686px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 609px) {
+    nav {
+        display: none;
+    }
+    .one,
+    .two,
+    .three {
+        background-color: rgb(238, 255, 0);
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+.menu-burguer {
+    width: 40px;
+    height: 30px;
+}
+
+.menu-section.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(150deg, #fafafa, #fcba05,#eaff00 );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-section.on nav {
+    display: inline-block;
+    position: absolute;
+    top: 10;
+    left: 10;
+    width: 40rem;
+    height: 80rem;
+}
+
+.menu-section.on .menu-burguer {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.menu-section.on .menu-burguer .one {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.menu-section.on .menu-burguer .two {
+    opacity: 0;
+}
+
+.menu-section.on .menu-burguer .three {
+    transform: rotate(-45deg) translate(8px, -9px);
+}
+
+.menu-section.on nav ul {
+    display: block;
+    text-align: center;
+}
+
+.menu-section.on nav ul li a {
+    transition-duration: 0.3s;
+    font-size: 5rem;
+    line-height: 15rem;
+    margin-left: 0;
+}
+}

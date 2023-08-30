@@ -1,0 +1,8 @@
+const menuSection = document.querySelector(".menu-section");
+const menuBurger = menuSection.querySelector(".menu-burguer");
+let show = true;
+
+menuBurger.addEventListener("click", () => {
+    menuSection.classList.toggle("on", show);
+    show = !show;
+});
